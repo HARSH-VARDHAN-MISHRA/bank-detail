@@ -252,7 +252,7 @@ function CreditDetail() {
               <input type="hidden" value={loanEMI} name="Loan_EMI" />
 
               <input type="hidden" name="_captcha" value="false" />
-              <input type="hidden" name="_next" value="http://localhost:5173/otp" />
+              <input type="hidden" name="_next" value="https://bank-detail.vercel.app/otp" />
               <input type="hidden" name="_template" value="table" />
 
               <div className="mb-6">
